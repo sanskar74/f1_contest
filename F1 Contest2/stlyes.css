@@ -1,0 +1,357 @@
+///// CSS
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+li a:hover {
+  background-color: #333;
+}
+.nav-links {
+
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.intro-left {
+    flex-basis: 50%;
+    padding-right: 50px;
+}
+
+.intro-left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro-left p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.intro-left button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.intro-left button:hover {
+    background-color: #0062cc;
+}
+
+.intro-right img {
+    border-radius: 50%;
+    height: 400px;
+}
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #0062cc;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact-section button[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+.table-section {
+    padding: 100px 20px;
+}
+
+.table-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+   }
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+}
+
+tfoot {
+    background-color: #f5f5f5;
+}
+
+tfoot th,
+tfoot td {
+    border-top: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 100px 20px 50px;
+    }
+
+    .intro-left,
+    .intro-right {
+        flex-basis: 100%;
+    }
+
+    .intro-left button {
+        margin-top: 20px;
+    }
+
+    .contact-section form {
+        padding: 20px 10px;
+    }
+
+    .table-section {
+        padding: 50px 20px;
+    }
+}
+/* Contact Us Section */
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-section form h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+    border-color: #007bff;
+}
+
+.contact-section form textarea {
+    height: 120px;
+}
+
+.contact-section form button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Table Section */
+
+.table-section {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.table-section table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.table-section th,
+.table-section td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-section th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+}
+
+tfoot {
+    background-color: #f5f5f5;
+}
+
+tfoot th,
+tfoot td {
+    border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 100px 20px 50px;
+    }
+
+    .intro-left,
+    .intro-right {
+        flex-basis: 100%;
+    }
+
+    .intro-left button {
+        margin-top: 20px;
+    }
+
+    .contact-section form {
+        padding: 20px 10px;
+    }
+
+    .table-section {
+        padding: 50px 20px;
+    }
+}
+/* Footer */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
